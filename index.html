@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="#">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script async type="module" src="js/main.js"></script>
+</head>
+<body class="container">
+    <header class="main-header">
+        <h1 class="main-header__title">Productos</h1>
+    </header>
+    <main class="content">
+        <form action="#" class="fields">
+            <div class="field">
+                <label for="nombre">Nombre producto</label>
+                <input required placeholder="Ej. Patatas" id="nombre" name="nombre" type="text">
+            </div>
+            <div class="field">
+                <label for="precio">Precio producto</label>
+                <input required id="precio" name="precio" type="number">
+            </div>
+            <div class="field">
+                <ul>
+                    <li>
+                        <label for="tipo">Tipo producto</label>
+                        <select name="tipo" id="tipo">
+                            <option value="0" selected>No perecedero</option>
+                            <option value="1">Perecedero</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="valor-tipo">Tipo</label>
+                        <input value="" type="text" name="valor-tipo" id="valor-tipo">
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button class="btn--1">Cargar</button>
+                <input class="btn--2" type="button" value="Calcular">
+                <span class="total"></span>
+            </div>
+        </form>
+        <div class="output">
+            
+        </div>
+    </main>
+</body>
+</html>
